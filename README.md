@@ -28,6 +28,10 @@ Switchboard reads your **unassigned queue** and gets each ticket to the right pe
 
 It runs on the help desk Nexus is already connected to — Zendesk, Freshdesk, Freshservice, Jira Service Management or HaloPSA — so there's nothing new to plug in. And it's **deterministic and explainable**: every decision comes with a plain-English trace of why this engineer, this time.
 
+- 🎯 **Right person, not nearest person** — specialism first, then live availability, then load.
+- 🔍 **Explainable by default** — a plain-English trace behind every routing decision.
+- 🛡️ **Safe to switch on** — manual by default, with a dry run and rails before anything writes back.
+
 > **Closed beta · private add-on.** Switchboard stays hidden in Nexus unless your licence key carries the entitlement — there's no upsell, just nothing, until you're in the beta. And even then it's **manual by default** and honest about being early: turn on automatic only once you've watched it get the calls right.
 
 ## How it decides
