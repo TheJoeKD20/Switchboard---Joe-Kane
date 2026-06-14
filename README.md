@@ -17,18 +17,18 @@
 </p>
 
 <p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-trace.png" alt="The Switchboard console: engineers with specialisms and load bars, and the unassigned queue routed by area, each ticket o[...]
+  <img src="https://nexus.joekane.org/assets/shots/switchboard-trace.png" alt="The Switchboard console — engineers with their specialisms and load bars beside the unassigned queue, each ticket routed to a named engineer with the reason shown." width="820" />
 </p>
 
 ---
 
 ## What is Switchboard?
 
-Switchboard reads your **unassigned queue** and gets each ticket to the right person — matched by **specialism**, **who's actually free** (from your help desk's live agent presence) and **current lo[...]
+Switchboard reads your **unassigned queue** and gets each ticket to the right person — matched by **specialism**, **who's actually free** (from your help desk's live agent presence) and **current load**. It recommends, or — when you're ready — assigns automatically, writing the result straight back to your help desk.
 
-It runs on the help desk Nexus is already connected to — Zendesk, Freshdesk, Freshservice, Jira Service Management or HaloPSA — so there's nothing new to plug in. And it's **deterministic and expl[...]
+It runs on the help desk Nexus is already connected to — Zendesk, Freshdesk, Freshservice, Jira Service Management or HaloPSA — so there's nothing new to plug in. And it's **deterministic and explainable**: every decision comes with a plain-English trace of why this engineer, this time.
 
-> **Closed beta · private add-on.** Switchboard stays hidden in Nexus unless your licence key carries the entitlement — there's no upsell, just nothing, until you're in the beta. And even then it's[...]
+> **Closed beta · private add-on.** Switchboard stays hidden in Nexus unless your licence key carries the entitlement — there's no upsell, just nothing, until you're in the beta. And even then it's **manual by default** and honest about being early: turn on automatic only once you've watched it get the calls right.
 
 ## How it decides
 
@@ -41,10 +41,10 @@ It runs on the help desk Nexus is already connected to — Zendesk, Freshdesk, F
 
 ## Recommend, or just do it
 
-Three modes — **off**, **manual** (it recommends, you click Assign) and **automatic** (it writes the assignment straight back to your help desk). Start with a **dry run** that records exactly what i[...]
+Three modes — **off**, **manual** (it recommends, you click Assign) and **automatic** (it writes the assignment straight back to your help desk). Start with a **dry run** that records exactly what it *would* have done — no writes — so you can trust it before you let it loose.
 
 <p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-routing.png" alt="The Routing tab: an Off / Manual / Automatic control, the safety rails — dry run, business-hours-only, online-only, a[...]
+  <img src="https://nexus.joekane.org/assets/shots/switchboard-routing.png" alt="The Routing tab — an Off / Manual / Automatic control with the safety rails: dry run, business-hours only, online-only, a per-minute cap and area exclusions." width="760" />
 </p>
 
 - **Real-load capacity** — caps each engineer by their actual open tickets, not a guess.
@@ -54,19 +54,19 @@ Three modes — **off**, **manual** (it recommends, you click Assign) and **auto
 
 ## Learns your team
 
-Not sure who's best at what? Switchboard reads each engineer's recently-**solved** tickets and proposes their specialisms — with the evidence in plain English. You review and apply; it never overwri[...]
+Not sure who's best at what? Switchboard reads each engineer's recently-**solved** tickets and proposes their specialisms — with the evidence in plain English. You review and apply; it never overwrites what you've set by hand.
 
 <p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-learn.png" alt="The specialty-learning review: each engineer with the specialisms learned from their solved history and a one-line ration[...]
+  <img src="https://nexus.joekane.org/assets/shots/switchboard-learn.png" alt="The specialism-learning review — each engineer with the specialisms inferred from their solved history and a one-line rationale to accept or edit." width="760" />
 </p>
 
 ## AI for the hard ones
 
-When the keyword classifier is **unsure**, Switchboard can ask the AI provider *you* configure (Anthropic or OpenAI, your own key) to pick the engineer — only for those uncertain tickets, and only t[...]
+When the keyword classifier is **unsure**, Switchboard can ask the AI provider *you* configure (Anthropic or OpenAI, your own key) to pick the engineer — only for those uncertain tickets, and only from the eligible team. The deterministic engine is always the fallback, so AI never blocks a routing.
 
 ## On the wall, live
 
-Switchboard isn't just a console — it's a **board panel**, too. A live feed streams every incoming ticket and the engineer it's headed to, with engineer load bars, tap-a-row for the trace, one-tap a[...]
+Switchboard isn't just a console — it's a **board panel**, too. A live feed streams every incoming ticket and the engineer it's headed to, with engineer load bars, tap-a-row for the trace, one-tap assign, and a little celebration when the queue hits zero.
 
 <p align="center">
   <img src="https://nexus.joekane.org/assets/shots/switchboard-panel.webp" alt="The Switchboard live-feed panel on the wallboard." width="760" />
