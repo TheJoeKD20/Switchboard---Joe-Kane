@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://nexus.joekane.org/assets/switchboard-logo.png" alt="Switchboard" width="96" />
+</p>
+
 <h1 align="center">Switchboard</h1>
 
 <p align="center"><b>Every ticket to the right engineer — automatically.</b></p>
 
-<p align="center">A private auto-routing add-on for <a href="https://nexus.joekane.org">Nexus</a>.</p>
+<p align="center">A private auto-routing add-on for <a href="https://nexus.joekane.org">Nexus</a> — specialism, availability and load, with a trace behind every call.</p>
 
 <p align="center">
   <a href="https://nexus.joekane.org/switchboard">Overview</a> ·
@@ -11,9 +15,9 @@
 </p>
 
 <p align="center">
-  <img alt="Closed beta" src="https://img.shields.io/badge/status-closed%20beta-e0a93b" />
-  <img alt="Private add-on" src="https://img.shields.io/badge/private-add--on-8957e5" />
-  <img alt="Part of Nexus" src="https://img.shields.io/badge/part%20of-Nexus-1f6feb" />
+  <img alt="Closed beta" src="https://img.shields.io/badge/status-closed%20beta-D6A42A" />
+  <img alt="Private add-on" src="https://img.shields.io/badge/private-add--on-24C9A6" />
+  <img alt="Part of Nexus" src="https://img.shields.io/badge/part%20of-Nexus-3A9BF0" />
 </p>
 
 <p align="center">
