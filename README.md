@@ -1,106 +1,107 @@
-<p align="center">
-  <img src="https://nexus.joekane.org/assets/switchboard-logo.png" alt="Switchboard" width="96" />
-</p>
+<div align="center">
 
-<h1 align="center">Switchboard</h1>
+<a href="https://nexus.joekane.org/switchboard">
+  <img src="https://nexus.joekane.org/assets/switchboard-logo.png" alt="Switchboard logo — automatic ticket routing for Nexus by Joe Kane" width="120" />
+</a>
 
-<p align="center"><b>Every ticket to the right engineer — automatically.</b></p>
+# Switchboard — automatic ticket routing for your help desk
 
-<p align="center">A private auto-routing add-on for <a href="https://nexus.joekane.org">Nexus</a> — specialism, availability and load, with a trace behind every call.</p>
+**Every ticket to the right engineer — automatically.** Switchboard is the intelligent auto-routing add-on for **[Nexus](https://github.com/TheJoeKD20/Nexus---Joe-Kane)** that assigns work by specialism, live availability and current workload — so the queue sorts itself and nothing lands on the wrong desk.
 
-<p align="center">
-  <a href="https://nexus.joekane.org/switchboard">Overview</a> ·
-  <a href="https://nexus.joekane.org/docs#switchboard">Docs</a> ·
-  <a href="mailto:joe@joekane.org?subject=Switchboard%20beta%20access">Request beta access</a>
-</p>
+[**🌐 Learn more**](https://nexus.joekane.org/switchboard) · [**🚀 Live demo**](https://nexus.joekane.org/demo) · [**📚 Docs**](https://nexus.joekane.org/docs) · [**📦 Nexus**](https://github.com/TheJoeKD20/Nexus---Joe-Kane)
 
-<p align="center">
-  <img alt="Closed beta" src="https://img.shields.io/badge/status-closed%20beta-D6A42A" />
-  <img alt="Private add-on" src="https://img.shields.io/badge/private-add--on-24C9A6" />
-  <img alt="Part of Nexus" src="https://img.shields.io/badge/part%20of-Nexus-3A9BF0" />
-</p>
+<a href="https://nexus.joekane.org/switchboard">
+  <img src="https://nexus.joekane.org/assets/shots/switchboard-routing.png" alt="Switchboard routing a support ticket to the best-matched engineer automatically" width="860" />
+</a>
 
-<p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-trace.png" alt="The Switchboard console — engineers with their specialisms and load bars beside the unassigned queue, each ticket routed to a named engineer with the reason shown." width="820" />
-</p>
+</div>
 
 ---
 
 ## What is Switchboard?
 
-Switchboard reads your **unassigned queue** and gets each ticket to the right person — matched by **specialism**, **who's actually free** (from your help desk's live agent presence) and **current load**. It recommends, or — when you're ready — assigns automatically, writing the result straight back to your help desk.
+**Switchboard is an automatic ticket-routing engine** that bolts onto the [Nexus support wallboard](https://github.com/TheJoeKD20/Nexus---Joe-Kane). Instead of tickets piling up in a shared queue waiting to be grabbed, Switchboard reads each one, works out who's best placed to handle it, and routes it there — in real time.
 
-It runs on the help desk Nexus is already connected to — Zendesk, Freshdesk, Freshservice, Jira Service Management or HaloPSA — so there's nothing new to plug in. And it's **deterministic and explainable**: every decision comes with a plain-English trace of why this engineer, this time.
+It makes three decisions for every ticket:
 
-- 🎯 **Right person, not nearest person** — specialism first, then live availability, then load.
-- 🔍 **Explainable by default** — a plain-English trace behind every routing decision.
-- 🛡️ **Safe to switch on** — manual by default, with a dry run and rails before anything writes back.
-
-> **Closed beta · private add-on.** Switchboard stays hidden in Nexus unless your licence key carries the entitlement — there's no upsell, just nothing, until you're in the beta. And even then it's **manual by default** and honest about being early: turn on automatic only once you've watched it get the calls right.
-
-## How it decides
-
-| | |
-|---|---|
-| **1 · Classify** | Read the ticket — subject *and* body, with quoted history and signatures stripped — and tag its area (POS, M365, network, access, on-site…) plus a P1/P2/P3 priority. |
-| **2 · Match specialism** | Find the engineers whose primary skill is that area, then their secondary specialists — the right person before the nearest person. |
-| **3 · Check availability** | Cross-reference live agent presence: online beats away; on-site and at-capacity engineers sit out. |
-| **4 · Balance the load** | Among equally-good options the least-loaded wins, with a fairness rotation — or it **holds** for the team when nobody's free. |
-
-## Recommend, or just do it
-
-Three modes — **off**, **manual** (it recommends, you click Assign) and **automatic** (it writes the assignment straight back to your help desk). Start with a **dry run** that records exactly what it *would* have done — no writes — so you can trust it before you let it loose.
-
-<p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-routing.png" alt="The Routing tab — an Off / Manual / Automatic control with the safety rails: dry run, business-hours only, online-only, a per-minute cap and area exclusions." width="760" />
-</p>
-
-- **Real-load capacity** — caps each engineer by their actual open tickets, not a guess.
-- **Your rails** — business-hours only, online-only, a per-minute cap, hold your P1s, exclude whole areas.
-- **A full audit trail** — every automatic assignment (and every dry-run preview) logged with its reason.
-- **Optional AI** for the tickets keywords can't call — your provider, your key, with the built-in engine always as the fallback.
-
-## Learns your team
-
-Not sure who's best at what? Switchboard reads each engineer's recently-**solved** tickets and proposes their specialisms — with the evidence in plain English. You review and apply; it never overwrites what you've set by hand.
-
-<p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-learn.png" alt="The specialism-learning review — each engineer with the specialisms inferred from their solved history and a one-line rationale to accept or edit." width="760" />
-</p>
-
-## AI for the hard ones
-
-When the keyword classifier is **unsure**, Switchboard can ask the AI provider *you* configure (Anthropic or OpenAI, your own key) to pick the engineer — only for those uncertain tickets, and only from the eligible team. The deterministic engine is always the fallback, so AI never blocks a routing.
-
-## On the wall, live
-
-Switchboard isn't just a console — it's a **board panel**, too. A live feed streams every incoming ticket and the engineer it's headed to, with engineer load bars, tap-a-row for the trace, one-tap assign, and a little celebration when the queue hits zero.
-
-<p align="center">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-panel.webp" alt="The Switchboard live-feed panel on the wallboard." width="760" />
-</p>
-
-## Write-back support by help desk
-
-Routing works on **every** help desk Nexus connects to (it only needs live presence + the unassigned queue). Applying an assignment — the write-back — depends on the provider:
-
-| Help desk | Recommend | Assign (write-back) |
-|---|:---:|:---:|
-| Zendesk | ✅ | ✅ |
-| Freshdesk | ✅ | ✅ |
-| Freshservice | ✅ | ✅ |
-| HaloPSA | ✅ | ✅ |
-| Jira Service Management | ✅ | — *(advisory-only in this beta)* |
-
-## Get in
-
-Switchboard is part of **[Nexus](https://nexus.joekane.org)** — a private add-on unlocked per-licence, in closed beta while we tune it against real teams. Want a look? Tell us about your team:
-
-→ **[Request beta access](mailto:joe@joekane.org?subject=Switchboard%20beta%20access)** · or read the [overview](https://nexus.joekane.org/switchboard).
+1. **What is this?** — classifies by area and priority (with optional AI for the uncertain ones).
+2. **Who's the specialist?** — matches the ticket to engineers by skill *before* falling back on general availability.
+3. **Who can actually take it?** — checks live agent presence and current workload, so nobody gets buried and nothing stalls.
 
 ---
 
-<p align="center">
-  <a href="https://nexus.joekane.org/switchboard">nexus.joekane.org/switchboard</a> · Built by <a href="https://joekane.org">Joe Kane</a><br/>
-  <sub>© 2026 Joe Kane. A private add-on for Nexus, a proprietary product.</sub>
-</p>
+## ✨ Key features
+
+- **🎯 Specialism-first matching** — routes to the right expertise, not just the next free hands.
+- **🟢 Live availability aware** — uses real-time agent presence so tickets never land on someone who's away.
+- **⚖️ Workload balancing** — spreads the queue evenly so no engineer drowns.
+- **🛡️ Three safe modes** — **Off**, **Manual** (recommendations only) or **Automatic** (hands-free assignment). Move at your own pace.
+- **🧪 Dry-run testing** — preview exactly what Switchboard *would* do before you let it act.
+- **📜 Full audit trail** — every routing decision is logged and explainable.
+- **🤖 Optional AI assist** — for ambiguous tickets that need a smarter read.
+
+<div align="center">
+<img src="https://nexus.joekane.org/assets/shots/switchboard-board.webp" alt="Switchboard live routing board inside the Nexus wallboard" width="420" />
+<img src="https://nexus.joekane.org/assets/shots/switchboard-trace.png" alt="Switchboard decision trace showing why a ticket was routed to an engineer" width="420" />
+</div>
+
+---
+
+## 🔌 Works with
+
+Switchboard routes tickets across the help desks Nexus already supports:
+
+**Zendesk · Freshdesk · Freshservice · Jira Service Management · HaloPSA**
+
+---
+
+## 💡 How it works
+
+```
+New ticket ──▶ Classify (area + priority)
+                   │
+                   ▼
+           Match by specialism ──▶ Check live availability + workload
+                                          │
+                                          ▼
+                          Route to the best-placed engineer
+                        (Off · Manual recommend · Automatic)
+```
+
+Start in **Manual** to watch its recommendations, switch on **Dry-run** to validate against real traffic, then flip to **Automatic** when you trust it. Every step is reversible and fully audited.
+
+<div align="center">
+<img src="https://nexus.joekane.org/assets/shots/switchboard-learn.png" alt="Switchboard learning which engineers handle which kinds of ticket" width="600" />
+</div>
+
+---
+
+## 🚀 Getting started
+
+Switchboard is a private add-on for **[Nexus](https://github.com/TheJoeKD20/Nexus---Joe-Kane)**:
+
+1. Run **[Nexus](https://nexus.joekane.org)** and connect your help desk.
+2. Enable **Switchboard** from your licence (it's a **public beta, included with the Enterprise plan**).
+3. Start in **Manual**, review the recommendations, then graduate to **Automatic** when you're ready.
+
+See the **[Switchboard guide](https://nexus.joekane.org/switchboard)** for the full walkthrough.
+
+---
+
+## 👤 About
+
+Switchboard is built by **[Joe Kane](https://www.linkedin.com/in/joekanedeadman)**, an independent software developer, as part of the **[Nexus](https://github.com/TheJoeKD20/Nexus---Joe-Kane)** support platform.
+
+- 🌐 Website: **[nexus.joekane.org/switchboard](https://nexus.joekane.org/switchboard)**
+- 💼 LinkedIn: **[Joe Kane](https://www.linkedin.com/in/joekanedeadman)**
+- 🧩 Main product: **[Nexus](https://github.com/TheJoeKD20/Nexus---Joe-Kane)** — the self-hosted, real-time help desk wallboard
+
+---
+
+<div align="center">
+
+**[Every ticket to the right engineer →](https://nexus.joekane.org/switchboard)**
+
+*Switchboard is proprietary software, currently in closed/public beta. © 2026 Joe Kane. All rights reserved.*
+
+</div>
