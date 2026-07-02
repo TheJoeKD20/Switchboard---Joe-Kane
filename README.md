@@ -11,7 +11,7 @@
 [**🌐 Learn more**](https://nexus.joekane.org/switchboard) · [**🚀 Live demo**](https://nexus.joekane.org/demo) · [**📚 Docs**](https://nexus.joekane.org/docs) · [**📦 Nexus**](https://github.com/TheJoeKD20/Nexus---Joe-Kane)
 
 <a href="https://nexus.joekane.org/switchboard">
-  <img src="https://nexus.joekane.org/assets/shots/switchboard-routing.png" alt="Switchboard routing a support ticket to the best-matched engineer automatically" width="860" />
+  <img src="https://nexus.joekane.org/assets/shots/switchboard-routing.webp" alt="Switchboard routing a support ticket to the best-matched engineer automatically" width="860" />
 </a>
 
 </div>
@@ -42,7 +42,7 @@ It makes three decisions for every ticket:
 
 <div align="center">
 <img src="https://nexus.joekane.org/assets/shots/switchboard-board.webp" alt="Switchboard live routing board inside the Nexus wallboard" width="420" />
-<img src="https://nexus.joekane.org/assets/shots/switchboard-trace.png" alt="Switchboard decision trace showing why a ticket was routed to an engineer" width="420" />
+<img src="https://nexus.joekane.org/assets/shots/switchboard-trace.webp" alt="Switchboard decision trace showing why a ticket was routed to an engineer" width="420" />
 </div>
 
 ---
@@ -51,7 +51,7 @@ It makes three decisions for every ticket:
 
 Switchboard routes tickets across the help desks Nexus already supports:
 
-**Zendesk · Freshdesk · Freshservice · Jira Service Management · HaloPSA**
+**Zendesk · Freshdesk · Freshservice · Jira Service Management · HaloPSA · SuperOps · NinjaOne · ConnectWise PSA**
 
 ---
 
@@ -71,14 +71,14 @@ New ticket ──▶ Classify (area + priority)
 Start in **Manual** to watch its recommendations, switch on **Dry-run** to validate against real traffic, then flip to **Automatic** when you trust it. Every step is reversible and fully audited.
 
 <div align="center">
-<img src="https://nexus.joekane.org/assets/shots/switchboard-learn.png" alt="Switchboard learning which engineers handle which kinds of ticket" width="600" />
+<img src="https://nexus.joekane.org/assets/shots/switchboard-learn.webp" alt="Switchboard learning which engineers handle which kinds of ticket" width="600" />
 </div>
 
 ---
 
 ## 🚀 Getting started
 
-Switchboard is a private add-on for **[Nexus](https://github.com/TheJoeKD20/Nexus---Joe-Kane)**:
+Switchboard is an add-on for **[Nexus](https://github.com/TheJoeKD20/Nexus---Joe-Kane)**:
 
 1. Run **[Nexus](https://nexus.joekane.org)** and connect your help desk.
 2. Enable **Switchboard** from your licence (it's a **public beta, included with the Enterprise plan**).
@@ -102,6 +102,6 @@ Switchboard is built by **[Joe Kane](https://www.linkedin.com/in/joekanedeadman)
 
 **[Every ticket to the right engineer →](https://nexus.joekane.org/switchboard)**
 
-*Switchboard is proprietary software, currently in closed/public beta. © 2026 Joe Kane. All rights reserved.*
+*Switchboard is proprietary software, currently in public beta. © 2026 Joe Kane. All rights reserved.*
 
 </div>
